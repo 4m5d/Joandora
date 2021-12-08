@@ -132,14 +132,16 @@ main {
   #nav ul li {
     width: 100%;
     float: none;
+    padding: 15px 20px 0;
   }
   #nav ul li a {
+    border: 1px solid #ccc;
     line-height: 40px;
     border-radius: 10px;
     background: #fff;
     color: #171926;
   }
-  #phto img {
+  #photo img {
     width: 80%;
   }
 }
