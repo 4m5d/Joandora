@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* 초기화 */
+body, h1, h2, h3, ul, p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+small {
+  font-size: 1em;
+}
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+/* 웹폰트 */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%) no-repeat;
+}
+/* 1024이상 전체영역 */
+#wrap {
+  width: 960px;
+  margin: 8px auto 0;
+  border: 1px solid #bababa;;
+  background: #fff;
+}
+/* 메인헤더 */
+#mainHeader {
+  height: 279px;
+  background: url(../images/bg_header.png) no-repeat;
+}
+#mainHeader h1 {
+  padding: 35px 0 0 20px;
+  color: #fff;
+  font-size: 60px;
+}
+/* 네비 */
+#nav {
+  overflow: hidden;
+}
+#nav li {
+  width: 25%;
+  height: 60px;
+  float: left;
+}
+#nav li a {
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  background: #0d7935;
+  color: #fff;
+}
+#nav li a:hover {
+  background: #dfd70a;
+  color: #000;
+  font-weight: bold;
+}
+/* 메인본문 */
+main {
+  width: 740px;
+  float: left;
+}
+#content {
+  padding: 20px;
+}
+#content h3 {
+  margin: 21px 0;
+}
+#content p {
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+#photo {
+  width: 220px;
+  float: right;
+  background: #d6f2c7;
+  text-align: center;
+  padding: 20px 0;
+}
+/* 푸터 */
+#footer{
+  padding: 20px 0;
+  text-align: center;
+  background: #03210c;
+  color: #fff;
+  line-height: 30px;
+  clear: both;
+}
+/* 600-1023 */
+@media all and (max-width: 1023px) and (min-width: 600px) {
+  #wrap {
+    width: 580px;
+  }
+  main {
+    width: auto;
+    float: none;
+  }
+  #photo {
+    width: auto;
+    float: none;
+  }
+  #photo img {
+    width: 176px;
+  }
+}
+/* 599이하 */
+@media all and (max-width: 599px) {
+  body {
+    background: none;
+  }
+  #wrap {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+  #mainHeader {
+    height: 85px;
+    background: #95ee78
+  }
+  #mainHeader h1 {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  #nav ul li {
+    width: 100%;
+    float: none;
+  }
+  #nav ul li a {
+    line-height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    color: #171926;
+  }
+  #phto img {
+    width: 80%;
+  }
+}
